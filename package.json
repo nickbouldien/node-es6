@@ -1,0 +1,24 @@
+{
+  "name": "node_es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "nick bouldien",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && nodemon dist/server.js",
+    "serve": "node ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server.js -d dist"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  }
+}
